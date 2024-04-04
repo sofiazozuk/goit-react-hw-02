@@ -4,7 +4,7 @@ import css from "./App.css";
 import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Feedback from "../Feedback/Feedback";
-import Notification from "../Notifications/Notifications";
+import Notification from "../Notification/Notification";
 
 function App() {
 	const feedbackValues = {
