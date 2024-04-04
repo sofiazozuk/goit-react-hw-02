@@ -32,7 +32,7 @@ function App() {
 	};
 
 	const totalFeedback = values.good + values.neutral + values.bad;
-	const positivFeedback = Math.round(((values.good + values.neutral) / totalFeedback) * 100);
+	const positiveFeedback = Math.round(((values.good + values.neutral) / totalFeedback) * 100);
 
 	useEffect(() => {
 		window.localStorage.setItem("saved-values", JSON.stringify(values));
@@ -43,7 +43,7 @@ function App() {
 			<div className={css.border}>
 				<Description />
 				<Options updateFeedback={updateFeedback} totalFeedback={totalFeedback} resetFeedback={resetFeedback} />
-				{totalFeedback ? <Feedback values={values} totalFeedback={totalFeedback} positivFeedback={positivFeedback} /> : <Notification />}
+				{totalFeedback ? <Feedback values={values} totalFeedback={totalFeedback} positivFeedback={positiveFeedback} /> : <Notification />}
 			</div>
 		</div>
 	);
