@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import css from "./App.css";
+import css from "./App.module.css";
 import Description from "../Description/Description";
 import Options from "../Options/Options";
 import Feedback from "../Feedback/Feedback";
