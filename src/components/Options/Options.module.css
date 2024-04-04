@@ -1,0 +1,36 @@
+.listcontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.listitem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: #646cffaa;
+}
+
+.button {
+  font-weight: 500;
+  line-height: 1.5;
+  background-color: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.listitem:hover {
+  background-color: #61dafbaa;
+  transform: scale(1.2);
+}
