@@ -32,7 +32,8 @@ function App() {
 	};
 
 	const totalFeedback = values.good + values.neutral + values.bad;
-	const positiveFeedback = Math.round(((values.good + values.neutral) / totalFeedback) * 100);
+	const positiveFeedback = Math.round((values.good / totalFeedback) * 100);
+
 
 	useEffect(() => {
 		window.localStorage.setItem("saved-values", JSON.stringify(values));
